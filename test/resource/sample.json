@@ -1,0 +1,269 @@
+{
+   "checksum": "13dbd99f9d09696a1e87d026e7eb027c",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13232888386958270",
+            "guid": "99bf5514-15d6-477d-bb00-0123a1874a41",
+            "id": "5",
+            "name": "Google",
+            "type": "url",
+            "url": "https://www.google.co.jp/"
+         }, {
+            "children": [ {
+               "date_added": "13232888491889277",
+               "guid": "8d09b8c6-c929-49ae-8851-39616d104edb",
+               "id": "7",
+               "name": "The world’s leading software development platform · GitHub",
+               "type": "url",
+               "url": "https://github.com/"
+            }, {
+               "date_added": "13232888525799168",
+               "guid": "803a389e-b958-429c-9172-d5ce4e3d4a7b",
+               "id": "8",
+               "name": "The first single application for the entire DevOps lifecycle - GitLab | GitLab",
+               "type": "url",
+               "url": "https://about.gitlab.com/"
+            }, {
+               "date_added": "13232888536643271",
+               "guid": "60ebb60e-3da4-423d-8aaf-e958b0ddd2e8",
+               "id": "9",
+               "name": "Bitbucket | The Git solution for professional teams",
+               "type": "url",
+               "url": "https://bitbucket.org/"
+            }, {
+               "children": [ {
+                  "date_added": "13232888847071645",
+                  "guid": "de78d1c8-0706-49d6-8446-2f42eca998aa",
+                  "id": "15",
+                  "name": "ytakahashi · GitHub",
+                  "type": "url",
+                  "url": "https://github.com/ytakahashi"
+               } ],
+               "date_added": "13232888834212471",
+               "date_modified": "13232888892511731",
+               "guid": "3d76f5dc-c3f1-4f16-b552-756280cdc106",
+               "id": "14",
+               "name": "Folder1-1",
+               "type": "folder"
+            } ],
+            "date_added": "13232888463509021",
+            "date_modified": "13232888847071645",
+            "guid": "56d5da9a-059f-44fd-968e-cf5ffb619a06",
+            "id": "6",
+            "name": "Folder1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13232888592354033",
+               "guid": "235712dc-7831-42d7-ae3c-2a5a849a3d30",
+               "id": "11",
+               "name": "Apple",
+               "type": "url",
+               "url": "https://www.apple.com/"
+            }, {
+               "date_added": "13232888699580526",
+               "guid": "753afc82-d1db-48ec-9470-15d3f1bb84b4",
+               "id": "13",
+               "name": "Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more",
+               "type": "url",
+               "url": "https://www.amazon.com/"
+            } ],
+            "date_added": "13232888564436696",
+            "date_modified": "13232888699580526",
+            "guid": "07e16eb9-a953-4a28-b684-44d9fbd825ca",
+            "id": "10",
+            "name": "Folder2",
+            "type": "folder"
+         } ],
+         "date_added": "13232888367618041",
+         "date_modified": "13232888592354033",
+         "guid": "00000000-0000-4000-a000-000000000002",
+         "id": "1",
+         "name": "Bookmarks Bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13232888892511731",
+            "guid": "d5e86eac-b647-442c-9d2c-195097e807c5",
+            "id": "16",
+            "name": "YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/"
+         }, {
+            "children": [ {
+               "date_added": "13232888998561817",
+               "guid": "7d6c8f1d-bed1-440d-876a-8ac5ed65f8ff",
+               "id": "18",
+               "name": "TypeScript - JavaScript that scales.",
+               "type": "url",
+               "url": "https://www.typescriptlang.org/"
+            }, {
+               "children": [ {
+                  "date_added": "13232889014065935",
+                  "guid": "c572e3c3-41b9-4b95-bd6a-aeaa7ba98f59",
+                  "id": "19",
+                  "name": "Documentation · TypeScript",
+                  "type": "url",
+                  "url": "https://www.typescriptlang.org/docs/home.html"
+               }, {
+                  "children": [ {
+                     "date_added": "13232889217515482",
+                     "guid": "ee60dbcc-a684-4228-9cdb-683abe57ef00",
+                     "id": "27",
+                     "name": "TypeScript Playground",
+                     "type": "url",
+                     "url": "https://www.typescriptlang.org/play/index.html"
+                  }, {
+                     "children": [ {
+                        "date_added": "13232889541341137",
+                        "guid": "fb65f5d8-da63-471c-b464-118ad115f1cf",
+                        "id": "37",
+                        "name": "Basic Types · TypeScript",
+                        "type": "url",
+                        "url": "https://www.typescriptlang.org/docs/handbook/basic-types.html"
+                     } ],
+                     "date_added": "13232889526221428",
+                     "date_modified": "13232889544206471",
+                     "guid": "b2f77baf-aa11-45f0-9058-bf9cb772e659",
+                     "id": "36",
+                     "name": "A",
+                     "type": "folder"
+                  } ],
+                  "date_added": "13232889214837800",
+                  "date_modified": "13232889541341137",
+                  "guid": "7a1f3c53-bb97-4606-943e-3383fe03884b",
+                  "id": "26",
+                  "name": "Folder A - 1 - 1",
+                  "type": "folder"
+               } ],
+               "date_added": "13232889083869575",
+               "date_modified": "13232889217515482",
+               "guid": "7b43ab01-5a12-4366-9a25-11a74cb72a4d",
+               "id": "21",
+               "name": "Folder A - 1",
+               "type": "folder"
+            } ],
+            "date_added": "13232888995998314",
+            "date_modified": "13232889083869648",
+            "guid": "031b3697-38bf-4ccd-a6eb-7b731c3787e3",
+            "id": "17",
+            "name": "FolderA",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13232889071294702",
+               "guid": "38583513-b2e1-4f6c-8432-241f326a22b4",
+               "id": "20",
+               "name": "MDN Web Docs",
+               "type": "url",
+               "url": "https://developer.mozilla.org/en-US/"
+            }, {
+               "children": [ {
+                  "date_added": "13232889194687317",
+                  "guid": "f1f24839-0070-4ed9-8821-93a589f5a42d",
+                  "id": "25",
+                  "name": "The Go Programming Language Blog",
+                  "type": "url",
+                  "url": "https://blog.golang.org/"
+               } ],
+               "date_added": "13232889176887827",
+               "date_modified": "13232889197530275",
+               "guid": "3d5dc1f1-c2d2-4ba2-9782-c3ad88ea5b33",
+               "id": "23",
+               "name": "Folder B -1 ",
+               "type": "folder"
+            }, {
+               "date_added": "13232889187363429",
+               "guid": "531b356f-8e59-4975-a590-a41483bd4788",
+               "id": "24",
+               "name": "The Go Programming Language",
+               "type": "url",
+               "url": "https://golang.org/"
+            }, {
+               "children": [ {
+                  "date_added": "13232889270268076",
+                  "guid": "11c8eee7-cd7e-48d5-a9ef-9e7225c587d0",
+                  "id": "29",
+                  "name": "JavaScript - MDN Web Docs Glossary: Definitions of Web-related terms | MDN",
+                  "type": "url",
+                  "url": "https://developer.mozilla.org/en-US/docs/Glossary/JavaScript"
+               }, {
+                  "date_added": "13232889281820443",
+                  "guid": "2652f84b-33b9-496a-9d0b-4e4f5f876caf",
+                  "id": "30",
+                  "name": "Standard ECMA-262",
+                  "type": "url",
+                  "url": "http://www.ecma-international.org/publications/standards/Ecma-262.htm"
+               }, {
+                  "children": [ {
+                     "date_added": "13232889305963643",
+                     "guid": "2ceb7af4-4232-40ad-a278-c58c846d8bc8",
+                     "id": "32",
+                     "name": "JavaScript Guide - JavaScript | MDN",
+                     "type": "url",
+                     "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+                  }, {
+                     "children": [ {
+                        "date_added": "13232889340625440",
+                        "guid": "07f07cec-f17f-43ad-b744-401297a62758",
+                        "id": "34",
+                        "name": "Grammar and types - JavaScript | MDN",
+                        "type": "url",
+                        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types"
+                     }, {
+                        "date_added": "13232889352179644",
+                        "guid": "6ef45a9d-dc05-414c-8337-3c09546f500b",
+                        "id": "35",
+                        "name": "Arrow function expressions - JavaScript | MDN",
+                        "type": "url",
+                        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions"
+                     } ],
+                     "date_added": "13232889335449836",
+                     "date_modified": "13232889352179644",
+                     "guid": "4d86aa65-8005-4697-8cae-d742e176037d",
+                     "id": "33",
+                     "name": "javascript",
+                     "type": "folder"
+                  } ],
+                  "date_added": "13232889303167009",
+                  "date_modified": "13232889340625440",
+                  "guid": "835e0c4f-0f45-49e0-ba4d-813bfa0dd01c",
+                  "id": "31",
+                  "name": "Folder B - 2 - 1",
+                  "type": "folder"
+               } ],
+               "date_added": "13232889258652103",
+               "date_modified": "13232889305963643",
+               "guid": "1c6eccb1-df47-440a-bc36-051c51a91a37",
+               "id": "28",
+               "name": "Folder B - 2",
+               "type": "folder"
+            } ],
+            "date_added": "13232889161002445",
+            "date_modified": "13232889270268076",
+            "guid": "8995be9d-8b9f-4030-8160-d32661b6a8ca",
+            "id": "22",
+            "name": "Folder B",
+            "type": "folder"
+         } ],
+         "date_added": "13232888367618046",
+         "date_modified": "13232889161002545",
+         "guid": "00000000-0000-4000-a000-000000000003",
+         "id": "2",
+         "name": "Other Bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13232888367618048",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000004",
+         "id": "3",
+         "name": "Mobile Bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
