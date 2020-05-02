@@ -21,10 +21,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install dependencies
-      run: yarn --frozen-lockfile
-    - name: yarn build, and test
+      run: npm ci
+    - name: build, and test
       run: |
-        npm ci
         npm run lint:eslint
         npm run tsc
         npm test
