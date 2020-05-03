@@ -4,10 +4,10 @@ import { plainToClass } from 'class-transformer'
 import { readFileSync } from 'fs'
 
 export const getChromeBookmark = function (
-    filePath: string
+  filePath: string
 ): Array<BookmarkElement> {
-    const obj = JSON.parse(readFileSync(filePath, 'utf8'))
-    const bookmark = plainToClass(ChromeBookmark, obj)
+  const obj = JSON.parse(readFileSync(filePath, 'utf8'))
+  const bookmark = plainToClass(ChromeBookmark, obj)
 
-    return bookmark.getValues()
+  return bookmark.getValues()
 }
