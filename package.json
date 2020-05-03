@@ -64,7 +64,7 @@
     "cli"
   ],
   "license": "MIT",
-  "main": "dist/src/index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/ytakahashi/chrome-bookmark-reader.git",
   "scripts": {
     "build": "rimraf dist/* && tsc",
@@ -73,8 +73,8 @@
     "lint:prettier": "prettier --write \"**/*.{js,ts}\"",
     "prepublishOnly": "npm run build",
     "test": "jest --coverage --verbose",
-    "tsc": "tsc",
-    "ts-node": "ts-node"
+    "ts-node": "ts-node",
+    "tsc": "tsc"
   },
-  "types": "dist/src/index.d.ts"
+  "types": "dist/index.d.ts"
 }
