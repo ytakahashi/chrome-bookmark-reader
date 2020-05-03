@@ -6,6 +6,9 @@
   "bin": {
     "chrome-bookmark": "bin/chrome-bookmark.js"
   },
+  "bugs": {
+    "url": "https://github.com/ytakahashi/chrome-bookmark-reader/issues"
+  },
   "dependencies": {
     "class-transformer": "^0.2.3",
     "reflect-metadata": "^0.1.13"
@@ -35,6 +38,7 @@
     "dist",
     "bin"
   ],
+  "homepage": "https://github.com/ytakahashi/chrome-bookmark-reader",
   "jest": {
     "moduleFileExtensions": [
       "ts",
@@ -59,9 +63,6 @@
   ],
   "license": "MIT",
   "main": "dist/index.js",
-  "moduleNameMapper": {
-    "^#/(.+)": "<rootDir>/src/$1"
-  },
   "repository": "https://github.com/ytakahashi/chrome-bookmark-reader.git",
   "scripts": {
     "clean": "rimraf dist/*",
