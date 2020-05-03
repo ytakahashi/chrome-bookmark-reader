@@ -5,6 +5,11 @@ export class BookmarkElement {
   type!: string
   url!: string
 
+  constructor(name: string, url: string) {
+    this.name = name
+    this.url = url
+  }
+
   @Type(() => BookmarkElement)
   children!: Array<BookmarkElement>
 
