@@ -9,9 +9,9 @@ This library parses bookmark json files of Google Chrome and returns the result 
 
 ```terminal
 npm install chrome-bookmark-reader
+```
 
-// or
-
+```terminal
 yarn add chrome-bookmark-reader
 ```
 
@@ -32,8 +32,8 @@ npm install -g chrome-bookmark-reader
 ```
 
 ```terminal
-% chrome-bookmark "/path/to/Chrome/Bookmark"
-// shows your bookmark contents
+chrome-bookmark "/path/to/Chrome/Bookmark"
+# -> shows your bookmark contents
 ```
 
 Note:  
