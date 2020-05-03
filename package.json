@@ -1,22 +1,15 @@
 {
   "name": "chrome-bookmark-reader",
+  "description": "A library/cli to read Bookmarks of Google Chrome.",
   "version": "0.0.1",
-  "description": "Google Chrome Bookmark Reader",
-  "main": "dist/index.js",
+  "author": "ytakahashi <yt01tc@gmail.com>",
   "bin": {
     "chrome-bookmark": "bin/chrome-bookmark.js"
   },
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "clean": "rimraf dist/*",
-    "lint:eslint": "eslint --ext js,ts .",
-    "lint:prettier": "prettier --write \"**/*.{js,ts}\"",
-    "test": "jest --coverage",
-    "tsc": "tsc"
+  "dependencies": {
+    "class-transformer": "^0.2.3",
+    "reflect-metadata": "^0.1.13"
   },
-  "keywords": [],
-  "author": "ytakahashi <yt01tc@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^25.2.1",
     "@types/node": "^13.13.4",
@@ -34,14 +27,14 @@
     "ts-node": "^8.9.1",
     "typescript": "^3.8.3"
   },
-  "dependencies": {
-    "class-transformer": "^0.2.3",
-    "reflect-metadata": "^0.1.13"
-  },
   "engines": {
     "node": ">= 12",
     "npm": ">= 6.12"
   },
+  "files": [
+    "dist",
+    "bin"
+  ],
   "jest": {
     "moduleFileExtensions": [
       "ts",
@@ -59,7 +52,24 @@
       "**/test/**/*.test.ts"
     ]
   },
+  "keywords": [
+    "bookmark",
+    "chrome",
+    "cli"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
   "moduleNameMapper": {
     "^#/(.+)": "<rootDir>/src/$1"
-  }
+  },
+  "repository": "https://github.com/ytakahashi/chrome-bookmark-reader.git",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "lint:eslint": "eslint --ext js,ts .",
+    "lint:prettier": "prettier --write \"**/*.{js,ts}\"",
+    "prepublishOnly": "npm run tsc",
+    "test": "jest --coverage",
+    "tsc": "tsc"
+  },
+  "types": "dist/index.d.ts"
 }
