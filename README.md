@@ -1,9 +1,18 @@
 # chrome-bookmark-reader
 
+![Typescript](https://img.shields.io/badge/-Typescript-007ACC.svg?logo=typescript&style=popout)
+[![npm version](https://badge.fury.io/js/chrome-bookmark-reader.svg)](https://badge.fury.io/js/chrome-bookmark-reader)
+[![Actions Status](https://github.com/ytakahashi/chrome-bookmark-reader/workflows/Node.js%20CI/badge.svg)](https://github.com/ytakahashi/chrome-bookmark-reader/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 A library/cli to read Bookmarks of Google Chrome.  
 This library parses bookmark json files of Google Chrome and returns the result as a flat json object.
 
-## usage
+## Requirements
+
+- Node.js >= 12
+
+## Usage
 
 ### As a library
 
@@ -19,7 +28,7 @@ yarn add chrome-bookmark-reader
 const chromeBookmarkReader = require('chrome-bookmark-reader')
 
 const path = "/path/to/Chrome/Bookmark"
-const result = chromeBookmarkReader.getChromeBookmark(path);
+const result = chromeBookmarkReader.getChromeBookmark(path)
 
 console.log(result)
 // shows your bookmark contents
@@ -32,11 +41,13 @@ npm install -g chrome-bookmark-reader
 ```
 
 ```terminal
-chrome-bookmark "/path/to/Chrome/Bookmark"
+chrome-bookmark --file "/path/to/Chrome/Bookmark"
 # -> shows your bookmark contents
 ```
 
-Note:  
+For detail, type `chrome-bookmark --help`.
+
+#### Notice
 
 If you are a mac user, you can find the bookmark json file at the following location:
 
