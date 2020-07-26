@@ -24,11 +24,11 @@ npm install chrome-bookmark-reader
 yarn add chrome-bookmark-reader
 ```
 
-```javascript
-const chromeBookmarkReader = require('chrome-bookmark-reader')
+```typescript
+import { getChromeBookmark } from 'chrome-bookmark-reader'
 
-const path = "/path/to/Chrome/Bookmark"
-const result = chromeBookmarkReader.getChromeBookmark(path)
+const path = '/path/to/Chrome/Bookmark'
+const result = getChromeBookmark(path)
 
 console.log(result)
 // shows your bookmark contents
