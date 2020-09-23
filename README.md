@@ -41,9 +41,11 @@ npm install -g chrome-bookmark-reader
 ```
 
 ```terminal
-chrome-bookmark --file "/path/to/Chrome/Bookmark"
+chrome-bookmark --file "/path/to/Chrome/Bookmark" [--pattern "something"]
 # -> shows your bookmark contents
 ```
+
+If `--pattern` option is provided, result is filtered by the given value.
 
 For detail, type `chrome-bookmark --help`.
 
@@ -52,3 +54,4 @@ For detail, type `chrome-bookmark --help`.
 If you are a mac user, you can find the bookmark json file at the following location:
 
 - `"/Users/{Username}/Library/Application Support/Google/Chrome/{Chrome Profile}/Bookmarks"`
+- [Where are Google Chrome bookmarks stored in macOS for multiple profiles?](https://apple.stackexchange.com/questions/322935/where-are-google-chrome-bookmarks-stored-in-macos-for-multiple-profiles)
