@@ -3,6 +3,9 @@ import { BookmarkElement } from './chromeBookmark'
 import { getChromeBookmark } from './index'
 import { makeStringFlag, makeCommand, reduceFlag } from 'catacli'
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const version = require('../package.json').version
+
 export class Bookmark {
   name: string
   url: string
@@ -51,7 +54,7 @@ const flags = reduceFlag(filePathOption, filterOption)
 const command = makeCommand({
   name: 'chrome-bookmark',
   description: 'command line tool to read Google Chrome bookmarks',
-  version: '0.0.2',
+  version: version,
   usage:
     'chrome-bookmark --file "/path/to/Chrome/Bookmark" [--pattern "something"]',
   flag: flags,
