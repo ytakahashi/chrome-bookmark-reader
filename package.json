@@ -1,7 +1,7 @@
 {
   "name": "chrome-bookmark-reader",
   "description": "A library/cli to read Bookmarks of Google Chrome.",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "ytakahashi <yt01tc@gmail.com>",
   "bin": {
     "chrome-bookmark": "bin/chrome-bookmark.js"
