@@ -64,7 +64,7 @@
     "cli"
   ],
   "license": "MIT",
-  "main": "dist/src/index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/ytakahashi/chrome-bookmark-reader.git",
   "scripts": {
     "build": "rimraf dist/* && tsc",

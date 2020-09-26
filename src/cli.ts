@@ -2,7 +2,9 @@ import Fuse from 'fuse.js'
 import { BookmarkElement } from './chromeBookmark'
 import { getChromeBookmark } from './index'
 import { makeStringFlag, makeCommand, reduceFlag } from 'catacli'
-import { version } from '../package.json'
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const version = require('../package.json').version
 
 export class Bookmark {
   name: string
