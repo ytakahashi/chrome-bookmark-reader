@@ -2,6 +2,7 @@ import Fuse from 'fuse.js'
 import { BookmarkElement } from './chromeBookmark'
 import { getChromeBookmark } from './index'
 import { makeStringFlag, makeCommand, reduceFlag } from 'catacli'
+import { version } from '../package.json'
 
 export class Bookmark {
   name: string
@@ -51,7 +52,7 @@ const flags = reduceFlag(filePathOption, filterOption)
 const command = makeCommand({
   name: 'chrome-bookmark',
   description: 'command line tool to read Google Chrome bookmarks',
-  version: '0.0.2',
+  version: version,
   usage:
     'chrome-bookmark --file "/path/to/Chrome/Bookmark" [--pattern "something"]',
   flag: flags,
