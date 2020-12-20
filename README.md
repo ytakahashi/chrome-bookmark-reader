@@ -55,3 +55,7 @@ If you are a mac user, you can find the bookmark json file at the following loca
 
 - `"/Users/{Username}/Library/Application Support/Google/Chrome/{Chrome Profile}/Bookmarks"`
 - [Where are Google Chrome bookmarks stored in macOS for multiple profiles?](https://apple.stackexchange.com/questions/322935/where-are-google-chrome-bookmarks-stored-in-macos-for-multiple-profiles)
+
+### Related repositories
+
+- [chrome-history-reader](https://github.com/ytakahashi/chrome-history-reader)
