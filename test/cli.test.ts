@@ -104,12 +104,12 @@ describe('readBookmark', () => {
 })
 
 describe('printBookmarks', () => {
-  it('prints empty array', () => {
+  it('prints empty array in json', () => {
     // Given
     const bookmarks: Bookmark[] = []
 
     // When
-    printBookmarks(bookmarks)
+    printBookmarks(bookmarks, 'json')
 
     // Then
     expect(console.log).toBeCalled()
@@ -119,19 +119,69 @@ describe('printBookmarks', () => {
     consoleLogSpy.mockRestore()
   })
 
-  it('prints bookmark array', () => {
+  it('prints empty array in text', () => {
+    // Given
+    const bookmarks: Bookmark[] = []
+
+    // When
+    printBookmarks(bookmarks, 'text')
+
+    // Then
+    expect(console.log).toBeCalled()
+    expect(consoleLogSpy.mock.calls[0][0]).toBe('')
+
+    consoleLogSpy.mockClear()
+    consoleLogSpy.mockRestore()
+  })
+
+  it('prints one bookmark in text', () => {
+    // Given
+    const bookmark1 = new Bookmark(element1)
+    const bookmarks: Bookmark[] = [bookmark1]
+
+    // When
+    printBookmarks(bookmarks, 'text')
+
+    // Then
+    expect(console.log).toBeCalledTimes(1)
+    expect(consoleLogSpy.mock.calls[0][0]).toBe('https://example.com\tTest 1')
+
+    consoleLogSpy.mockClear()
+    consoleLogSpy.mockRestore()
+  })
+
+  it('prints bookmarks in json', () => {
     // Given
     const bookmark1 = new Bookmark(element1)
     const bookmark2 = new Bookmark(element2)
     const bookmarks: Bookmark[] = [bookmark1, bookmark2]
 
     // When
-    printBookmarks(bookmarks)
+    printBookmarks(bookmarks, 'json')
 
     // Then
     expect(console.log).toBeCalled()
     expect(consoleLogSpy.mock.calls[0][0]).toBe(
       '[{"name":"Test 1","url":"https://example.com"},{"name":"Test 2","url":"https://foo.com"}]'
+    )
+
+    consoleLogSpy.mockClear()
+    consoleLogSpy.mockRestore()
+  })
+
+  it('prints bookmarks in text', () => {
+    // Given
+    const bookmark1 = new Bookmark(element1)
+    const bookmark2 = new Bookmark(element2)
+    const bookmarks: Bookmark[] = [bookmark1, bookmark2]
+
+    // When
+    printBookmarks(bookmarks, 'text')
+
+    // Then
+    expect(console.log).toBeCalledTimes(1)
+    expect(consoleLogSpy.mock.calls[0][0]).toBe(
+      'https://example.com\tTest 1\nhttps://foo.com\tTest 2'
     )
 
     consoleLogSpy.mockClear()
