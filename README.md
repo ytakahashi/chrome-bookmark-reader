@@ -34,6 +34,17 @@ console.log(result)
 // shows your bookmark contents
 ```
 
+#### option
+
+```typescript
+const option = {
+  shouldIncludeFolders: true,
+}
+const result = getChromeBookmark(path, option)
+```
+
+- `shouldIncludeFolders`: If `true`, results include bookmark folders (defaults to `false`).
+
 ### As a cli
 
 ```terminal
