@@ -1,6 +1,5 @@
 import Fuse from 'fuse.js'
-import { BookmarkElement } from './chromeBookmark'
-import { getChromeBookmark } from './index'
+import { getChromeBookmark, BookmarkElement, BookmarkUrlElement } from './index'
 import {
   makeBooleanFlag,
   makeStringFlag,
@@ -15,9 +14,9 @@ export class Bookmark {
   name: string
   url: string
 
-  constructor(element: BookmarkElement) {
-    this.name = element.name
-    this.url = element.url
+  constructor(name: string, url: string) {
+    this.name = name
+    this.url = url
   }
 }
 
@@ -111,7 +110,10 @@ const command = makeCommand({
   flag: flags,
   handler: (_, opts) => {
     const output = validateOutputOption(opts.output.value)
-    const bookmarks = readBookmarks(opts.file.value).map(b => new Bookmark(b))
+    const bookmarks = readBookmarks(opts.file.value)
+      .filter(b => b.isUrlElement())
+      .map(b => b as BookmarkUrlElement)
+      .map(b => new Bookmark(b.name, b.url))
     const target = filterBookmarks(bookmarks, opts.pattern.value)
     printBookmarks(target, output)
   },
