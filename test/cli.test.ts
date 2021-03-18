@@ -4,12 +4,11 @@ import {
   readBookmarks,
   Bookmark,
 } from '../src/cli'
-import { BookmarkElement } from '../src/chromeBookmark'
 import * as index from '../src/index'
 
-const element1 = new BookmarkElement('Test 1', 'https://example.com')
-const element2 = new BookmarkElement('Test 2', 'https://foo.com')
-const element3 = new BookmarkElement('Hello', 'https://bar.com')
+const element1 = new Bookmark('Test 1', 'https://example.com')
+const element2 = new Bookmark('Test 2', 'https://foo.com')
+const element3 = new Bookmark('Hello', 'https://bar.com')
 
 let consoleLogSpy: jest.SpyInstance
 let processExitSpy: jest.SpyInstance
@@ -136,8 +135,7 @@ describe('printBookmarks', () => {
 
   it('prints one bookmark in text', () => {
     // Given
-    const bookmark1 = new Bookmark(element1)
-    const bookmarks: Bookmark[] = [bookmark1]
+    const bookmarks: Bookmark[] = [element1]
 
     // When
     printBookmarks(bookmarks, 'text')
@@ -152,9 +150,7 @@ describe('printBookmarks', () => {
 
   it('prints bookmarks in json', () => {
     // Given
-    const bookmark1 = new Bookmark(element1)
-    const bookmark2 = new Bookmark(element2)
-    const bookmarks: Bookmark[] = [bookmark1, bookmark2]
+    const bookmarks: Bookmark[] = [element1, element2]
 
     // When
     printBookmarks(bookmarks, 'json')
@@ -171,9 +167,7 @@ describe('printBookmarks', () => {
 
   it('prints bookmarks in text', () => {
     // Given
-    const bookmark1 = new Bookmark(element1)
-    const bookmark2 = new Bookmark(element2)
-    const bookmarks: Bookmark[] = [bookmark1, bookmark2]
+    const bookmarks: Bookmark[] = [element1, element2]
 
     // When
     printBookmarks(bookmarks, 'text')
